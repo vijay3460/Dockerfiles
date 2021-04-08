@@ -1,0 +1,4 @@
+FROM centos:8
+COPY *.sh /tmp/
+WORKDIR /tmp
+CMD ["cat","java.sh"]

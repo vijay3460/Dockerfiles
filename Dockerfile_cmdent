@@ -1,0 +1,4 @@
+FROM centos:8
+WORKDIR /tmp
+COPY main.sh .
+ENTRYPOINT ["cat"]
