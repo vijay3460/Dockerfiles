@@ -1,0 +1,8 @@
+FROM centos:8
+MAINTAINER vijay
+RUN mkdir -p /var/lib/jenkins
+ENV HOME=/var/lib/jenkins
+WORKDIR $HOME
+COPY *.sh ./
+CMD ["main.sh"]
+ENTRYPOINT ["cat"]
